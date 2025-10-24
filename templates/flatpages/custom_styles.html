@@ -1,0 +1,23 @@
+{% extends 'flatpages/default.html' %}
+
+{% block extra_head %}
+    <style>
+        .custom-flatpage-content {
+            font-family: 'Georgia', serif; /* Измененный шрифт */
+            font-size: 1.5rem; /* Увеличенный размер текста */
+            color: #1a7e20; /* Немного зеленого для выделения */
+            padding: 20px;
+            border: 2px solid #1a7e20;
+            display: inline-block;
+        }
+    </style>
+{% endblock extra_head %}
+
+{% block content %}
+    <div class="container text-center">
+        <h2 class="mb-4">{{ flatpage.title }}</h2>
+        <div class="custom-flatpage-content">
+            {{ flatpage.content }}
+        </div>
+    </div>
+{% endblock content %}

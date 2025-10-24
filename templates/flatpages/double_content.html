@@ -1,0 +1,19 @@
+{% extends 'flatpages/default.html' %}
+
+{% block content %}
+    <div class="container text-center">
+        <h2 class="mb-4">{{ flatpage.title }}</h2>
+        
+        <p class="mt-4">Контент из админки (Часть 1):</p>
+        <div class="alert alert-info" role="alert">
+            {{ flatpage.content }} 
+        </div>
+
+        <hr>
+
+        <p class="mt-4">Контент из админки (Часть 2 - Повторение):</p>
+        <div class="alert alert-warning" role="alert">
+            {{ flatpage.content }} 
+        </div>
+    </div>
+{% endblock content %}
