@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from dotenv import load_dotenv # Не забудь pip install python-dotenv
+from dotenv import load_dotenv
 
 # Загружаем переменные окружения
 load_dotenv()
